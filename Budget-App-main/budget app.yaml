@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: pod
+metadata:
+   name: budget app-pod
+   labels: 
+     name: budget app-pod
+     app: budget app-pod
+spec:
+  containers:
+    - name: budget app-pod
+      image: akhilmuthyala/akhilmuthyala:latest
+      ports:
+       - containerport: 80      
